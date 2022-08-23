@@ -1,59 +1,243 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
+<!-- identar = alt + shift + F -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram</title>
     <style>
-        input{
+        .navbar span {
+            color: grey;
+            padding: 10px;
+
+        }
+
+        input {
             all: unset;
             padding: 10px;
             border: 1px solid rgb(219, 219, 219);
             margin-top: 10px;
         }
-        *{
-            font-family: -apple-systen,"system-ui","Segoe UI",Roboto,
-            Helvetica,Arial,sans-serif;
+
+        input:focus,
+        input:active {
+            border: 1px solid rgba(38, 38, 38, 0.4);
+        }
+
+        * {
+            font-family: -apple-systen, "system-ui", "Segoe UI", Roboto,
+                Helvetica, Arial, sans-serif !important;
         }
     </style>
 </head>
 
 <body style="
-background-color: #FAFAFA; 
-height: 100vh; 
-margin: 0px">
-
+    background-color: #FAFAFA; 
+    height: 100vh; 
+    margin: 0px">
     <div style="
         display: flex;
         flex-direction:row;
         flex-wrap:nowrap;
         align-content:center;
         justify-content:center;
-        align-items:center;">
-
-        <div class="esq" style="height: 700px; 
-        width: 430px; 
-        background-image:url(https://www.instagram.com/static/images/homepage/phones/home-phones.png/1dc085cdb87d.png);
-        background-repeat: no-repeat;
-        ">
+        align-items:center;
+        height: 90%;">
+        <div class="esq" style="
+            height: 700px; 
+            width: 430px; 
+            background-image:url(https://www.instagram.com/static/images/homepage/phones/home-phones.png/1dc085cdb87d.png);
+            background-repeat: no-repeat;
+            transform: scale(1.125);
+            margin-right: 40px;">
             <img src="phone.png" alt="" style="position:relative;top:28px;left:155px;" />
         </div>
+        <div class="dir" style="margin-top: -120px;">
+            <div>
+                <div style="
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: nowrap;
+                        align-content: center;
+                        align-items: stretch;
+                        justify-content:center;
+                        width: 350px;
+                        background-color: white;
+                        border: 1px solid rgb(219, 219, 219);
+                        font-family:-apple-system;
+                        padding: 40px;
+                        margin: 20px">
+                    <img src="insta-logo.png" style="padding: 0px 50px 30px 70px" alt="" />
+                    <input type="text" placeholder="Telefone, nome de usuário ou email" />
+                    <input type="password" placeholder="Senha" />
+                    <div style="
+                            background-color: rgba(0, 149, 246, 0.3);
+                            text-align: center;
+                            color: white;
+                            margin-top: 10px;
+                            border-radius: 5px;
+                            padding: 10px;">
+                        Entrar
+                    </div>
+                    <div style="
+                        display:flex;
+                        margin-top: 30px;
+                        flex-direction: row;
+                        align-items: center;">
+                        <div style="
+                            background-color: rgb(219, 219, 219);
+                            height: 1px;
+                            width:140px;"></div>
 
-        <div class="dir">
-            <div style="
-                display: flex;
-                flex-direction: column;
-                flex-wrap: nowrap;
-                align-content: center;
-                align-items: stretch;
-                justify-content:center;
-                width: 350px;">
-                <img src="insta-logo.png" style="padding: 0px 50px 0px 50px" alt="" />
-                <input type="text" placeholder="Telefone, nome de usuário ou email"/>
-                <input type="password" placeholder="Senha"/>
-                
+                        <div style="font-weight: 600;
+                        color: gray;
+                        padding: 0px 20px 0px 20px;
+                        ">
+                            OR
+                        </div>
+                        <div style="
+                            background-color: rgb(219, 219, 219);
+                            height: 1px;
+                            width:140px;"></div>
+                    </div>
+                    <div style="
+                            text-align: center;
+                            margin-top: 20px;
+                            color: rgb(56, 81, 133);
+                            font-weight: 600;
+                            font-size: 18px;">
+                        <span style="
+                                display: inline-block;
+                                margin-right: 8px;
+                                position: relative;
+                                top: 1px;
+                                background-image: url(https://www.instagram.com/static/bundles/es6/sprite_core_32f0a4f27407.png/32f0a4f27407.png);    
+                                background-repeat: no-repeat;
+                                background-position: -414px -259px;
+                                height: 16px;
+                                width: 16px;
+                                transform: scale(1.4);"></span>
+                        <span>Entrar com o Facebook</span>
+                        <div style="
+                                color:rgb(8,55,107);
+                                text-align:center;
+                                padding-top:20px">
+                            Esqueceu a senha?
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div style="background-color: white;
+                border: 1px solid rgb(219, 219, 219);
+                text-align: center;
+                padding: 20px;
+                margin: 20px;">
+                Não tem um conta?
+                <span style="
+                    color: rgba(0, 149, 246, 1);
+                    font-weight: 600 ;">
+                    Cadastre-se
+                </span>
+            </div>
+            <div style="text-align: center;
+             ">Obtenha o Aplicativo.</div>
+            <div style="text-align: center; margin-top: 20px;">
+                <img src="appstore.png" alt="" style="width: 150px;" />
+                <img src="playstore.png" alt="" style="width: 150px;" />
+            </div>
+        </div>
+    </div>
+    <div style="height: 10%;margin-top: -100px;">
+        <div style="
+            display: flex;
+            flex-direction: row; 
+            flex-wrap: wrap; 
+            text-align: center;
+            justify-content: center;
+            max-width: 1200px;
+            margin: auto;" class="navbar">
+            <span>Meta </span>
+            <span>Sobre</span>
+            <span>Blog</span>
+            <span>Carreiras</span>
+            <span>Ajuda</span>
+            <span>API</span>
+            <span>Privacidade</span>
+            <span>Termos</span>
+            <span>Principais contas</span>
+            <span>Hashtags</span>
+            <span>Localizações</span>
+            <span>Instagram Lite</span>
+            <span>Carregamento de contatos e não usuários</span>
+            <span>Dança</span>
+            <span>Comida e bebida</span>
+            <span>Casa e jardim</span>
+            <span>Música</span>
+            <span>Artes visuais</span>
+        </div>
+        <div style="text-align: center; color: grey;padding: 10px;">
+            Português (Brasil)
+            <select style="
+                -webkit-text-size-adjust: 100%;
+                --f52: 142,142,142;
+                --h1d: 255,255,255;
+                --de5: 255,255,255;
+                --d69: 0,149,246;
+                --b86: 88,195,34;
+                --i30: 237,73,86;
+                --d62: 255,255,255;
+                --e4f: 54,54,54;
+                --a72: 255,255,255;
+                --ie3: 142,142,142;
+                --c37: 237,73,86;
+                --f24: 0,149,246;
+                --daf: 255,1,105;
+                --f76: 28,209,79;
+                --jbb: 53,121,234;
+                --aab: 118,56,250;
+                --eca: 255,255,255;
+                --jb7: 0,0,0;
+                --fa7: 224,241,255;
+                --aa6: 38,38,38;
+                --ba8: 168,168,168;
+                --eac: 237,73,86;
+                --i1d: 38,38,38;
+                --edc: 199,199,199;
+                --f75: 38,38,38;
+                --fe0: 0,55,107;
+                --d87: 255,255,255;
+                --b3f: 250,250,250;
+                --bb2: 239,239,239;
+                --f23: 255,255,255;
+                --b38: 219,219,219;
+                --b6a: 219,219,219;
+                --ca6: 219,219,219;
+                --cdd: 38,38,38;
+                --e22: 199,199,199;
+                --e62: 245,251,255;
+                --b2f: 88,195,34;
+                --c8c: 168,168,168;
+                --ce3: 239,239,239;
+                --jd9: 0,0,0;
+                --j64: 54,54,54;
+                --a97: 243,243,243;
+                --d20: 38,38,38;
+                --in-feed-story-item-padding: 12px;
+                --desktop-nav-height: 60px;
+                -webkit-box-direction: normal;
+                cursor: pointer;
+                height: 100%;
+                left: 0;
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                width: 100%;"
+                >
+            </select>
+            © 2022 Instagram from Meta
         </div>
     </div>
 </body>
